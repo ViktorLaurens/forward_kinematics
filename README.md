@@ -155,6 +155,8 @@ Running pytest in the terminal should output the following:
   <img src="res/pytest_output.png" alt="pytest output" width="600">
 </p>
 
+![Screenshot](res/pytest_output.png)
+
 ## License
 Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE` for more information.
 
