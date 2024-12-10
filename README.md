@@ -17,9 +17,12 @@
 ## About the Project
 This repository demonstrates how to perform Forward Kinematics (FK) using a specific kinematic chain example.
 
-The example kinematic chain is illustrated below:
+The kinematic chain used in this project is illustrated below:
 
-![Kinematic Chain Example](res/kinematic_chain.png)
+<p align="center">
+  <img src="res/kinematic_chain.png" alt="Kinematic Chain Example" width="400">
+</p>
+
 
 ## Documentation
 Detailed documentation is available at: [Documentation](https://linktodocumentation).
