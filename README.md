@@ -49,6 +49,7 @@ T_{i}^{i+1} =
 0 & \sin(\alpha) & \cos(\alpha) & d \\
 0 & 0 & 0 & 1
 \end{bmatrix}
+```
 
 The complete homogeneous transformation between the base of the robot and the robot TCP is then given by: 
 
