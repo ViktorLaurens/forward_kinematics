@@ -30,13 +30,13 @@ def test_homogeneous_transform():
     theta = np.pi / 4
 
     robot = Robot()
-    T = robot.homogeneous_transform(a, d, alpha, theta)
+    transform = robot.homogeneous_transform(a, d, alpha, theta)
 
     # Expected transformation matrix
     expected = np.array([
-        [np.sqrt(2)/2, -np.sqrt(2)/2, 0, np.sqrt(2)/2],
-        [0, 0, 1, 0.5],
-        [-np.sqrt(2)/2, -np.sqrt(2)/2, 0, -np.sqrt(2)/2],
+        [np.sqrt(2)/2, 0, np.sqrt(2)/2, np.sqrt(2)/2],
+        [np.sqrt(2)/2, 0, -np.sqrt(2)/2, np.sqrt(2)/2],
+        [0, 1, 0, 0.5],
         [0, 0, 0, 1]
     ])
-    assert np.allclose(T, expected, atol=1e-3)
+    assert np.allclose(transform, expected, atol=1e-3)
