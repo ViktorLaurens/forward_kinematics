@@ -40,3 +40,25 @@ def test_homogeneous_transform():
         [0, 0, 0, 1]
     ])
     assert np.allclose(transform, expected, atol=1e-3)
+
+def test_calc_fk():
+    """
+    Test the calc_fk method.
+    """
+    # Define a robot
+    robot = Robot()
+
+    # Test joint angles/displacements
+    q = [np.pi/2, 0, -np.pi/2, 0.2]
+
+    # Calculate forward kinematics
+    T_fk = robot.calc_fk(q)
+
+    # Expected result (rounded to 3 decimals for comparison)
+    expected = np.array([
+        [1, 0,  0, -0.4],
+        [0,  1,  0, 0.2],
+        [0,  0,  1, 0.4],
+        [0,  0,  0, 1.0]
+    ])
+    assert np.allclose(T_fk, expected, atol=1e-3)
