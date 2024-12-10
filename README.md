@@ -61,6 +61,27 @@ T_{base}^{TCP} = T_{0}^{1} \cdot T_{1}^{2} \cdot T_{2}^{3} \cdot T_{3}^{4}
 ## Documentation
 Documentation can be downloaded from the  [`docs/`](docs/) folder. 
 
+### Key Notes:
+The `Robot` class includes the following important attributes:
+1. **`base_position`**: Specifies the position of the robot’s base with respect to an inertial world frame. It is represented as a 3D vector `[x, y, z]`.
+2. **`base_orientation`**: Defines the orientation of the robot’s base in the world frame. It is represented as a quaternion `[x, y, z, w]`.
+
+### `calc_fk` Function:
+The `calc_fk` function computes the **homogeneous transformation matrix** that describes the pose (position and orientation) of the robot's **Tool Center Point (TCP)** with respect to the inertial world frame. This transformation accounts for both the base position and orientation of the robot.
+
+### Special Case:
+If the following values are chosen for the base attributes:
+- `base_position = [0, 0, 0]`
+- `base_orientation = [0, 0, 0, 1]` (identity quaternion, representing no rotation)
+
+The homogeneous transformation matrix calculated by the `calc_fk` function will correspond directly to the transformation between the **robot's base frame** and its **TCP**, without being influenced by the world frame pose. This simplifies the computation to focus solely on the robot's kinematics.
+
+### Why Is This Important?
+By correctly setting the `base_position` and `base_orientation`:
+- You can align the robot’s base frame with the world frame, making calculations independent of external references.
+- This allows the kinematic model to be reused in different applications or configurations, where the robot’s base frame might be positioned differently relative to the environment.
+
+
 ## Project Structure
 The project is organized as follows:
 
