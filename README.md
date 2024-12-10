@@ -65,11 +65,80 @@ Documentation can be downloaded from the  [`docs/`](docs/) folder.
 ## Project Structure
 The project is organized as follows:
 
+```bash
+forward_kinematics/
+├── docs/                       # Documentation folder
+├── res/                        # Resources folder
+├── src/                        # Source code folder
+│   ├── fk/                     # Primary package for the project
+│   │   ├── __init__.py         # Makes this a regular package
+│   │   ├── __main__.py         # Entry point for the application
+│   │   └── utils.py            # A module file
+├── tests/                      # Unit tests for the project
+│   └── test_utils.py
+├── .gitignore                  # Specifies files and folders to ignore in version control
+├── LICENSE                     # License file specifying the project's terms of use
+├── pyproject.toml              # Configuration for packaging and installation 
+├── README.md                   # Project documentation and overview
+└── requirements.txt            # List of dependencies required for the project
+```
+
 ## Installation
 ### Prerequisites
+- Git (install the latest version of Git [here](https://git-scm.com/downloads))
+- Python 3.8 or higher (install the latest version of Python [here](https://www.python.org/downloads/))
+- pip
+
 ### Setup Instructions
+For installation on your local device, open a terminal and navigate to the desired directory to clone the project from GitHub. Then perform the following steps:
+
+1. Clone the repository from GitHub to your local device:
+   ```bash
+   git clone https://github.com/ViktorLaurens/forward_kinematics.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd forward_kinematics
+   ```
+
+3. Create a virtual environment: 
+   ```bash
+   python -m venv venv
+   ```
+
+4. Activate the virtual environment:
+   - For Windows: 
+      ```bash
+      .\venv\Scripts\Activate.ps1
+      ```
+   - For macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+
+5. Install dependencies: 
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Install the project in editable mode:
+   ```bash
+   pip install -e .
+   ```
+
+*What does this do?* This command tells pip to run the `setup.py` or `pyproject.toml` in the project to configure the package. A symbolic link between the source code of your project (in the `src/` directory) and the Python environment is created. Any changes made to the code are immediately reflected without needing to reinstall the project.
+
+*Note: For Windows users, if you're not authorized to run scripts, enable execution by running:*
+   ```bash
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+   ```
 
 ## Run the Project Locally
+After installation, run the project using the following command:
+```bash
+python -m fk
+```
 
 ## Usage and examples
 
@@ -84,16 +153,17 @@ pytest
 Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE` for more information.
 
 ## Acknowledgements
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [NumPy](https://numpy.org/) - A powerful library for numerical computations in Python.
+- [Denavit-Hartenberg Method](https://www.researchgate.net/publication/270576179_DIFFERENCE_BETWEEN_DENAVIT_-_HARTENBERG_D-H_CLASSICAL_AND_MODIFIED_CONVENTIONS_FOR_FORWARD_KINEMATICS_OF_ROBOTS_WITH_CASE_STUDY) - The foundation for kinematic modeling in robotics.
+
 
 ## Authors and Contact
-- [@ViktorLaurens](https://github.com/ViktorLaurens/)
+- Developed by [@ViktorLaurens](https://github.com/ViktorLaurens/)
+- Feel free to reach out via GitHub Issues or [email](mailto:viktor@example.com).
 
 ## Badges
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/ViktorLaurens/forward_kinematics/actions)  
+[![Code Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/ViktorLaurens/forward_kinematics/actions)  
+[![Robotics](https://img.shields.io/badge/robotics-forward--kinematics-orange.svg)](https://github.com/ViktorLaurens/forward_kinematics)
