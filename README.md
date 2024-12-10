@@ -164,6 +164,5 @@ Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. S
 ## Badges
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/ViktorLaurens/forward_kinematics/actions)  
-[![Code Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/ViktorLaurens/forward_kinematics/actions)  
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/ViktorLaurens/forward_kinematics/actions)
 [![Robotics](https://img.shields.io/badge/robotics-forward--kinematics-orange.svg)](https://github.com/ViktorLaurens/forward_kinematics)
