@@ -16,9 +16,9 @@ class Robot:
         self.base_position = np.array(base_position)
         self.base_rotation = self.quaternion_to_rotation_matrix(base_orientation)
         self.dh_params = [
-            {"a": 0, "d": 0.4, "alpha": np.pi/2, "theta": 0},
+            {"a": 0, "d": 0.4, "alpha": np.pi/2, "theta": np.pi/2},
             {"a": 0.4, "d": 0, "alpha": -np.pi/2, "theta": 0},
-            {"a": 0, "d": 0, "alpha": -np.pi/2, "theta": 0},
+            {"a": 0, "d": 0, "alpha": -np.pi/2, "theta": -np.pi/2},
             {"a": 0, "d": 0, "alpha": np.pi/2, "theta": 0}
         ]
     
@@ -84,8 +84,8 @@ class Robot:
         # Loop through each DH parameter set to compute the chain of transformations given the joint angles
         for i, params in enumerate(self.dh_params):
             if i <= 2: # Revolute joints
-                T_i = self.homogeneous_transform(params["a"], params["d"], params["alpha"], q[i])
+                T_i = self.homogeneous_transform(params["a"], params["d"], params["alpha"], params["theta"] + q[i])
             else: # Prismatic joint
-                T_i = self.homogeneous_transform(params["a"], q[i], params["alpha"], params["theta"])
+                T_i = self.homogeneous_transform(params["a"], params["d"] + q[i], params["alpha"], params["theta"])
             transform = transform @ T_i
-        return transform
+        return np.round(transform, 3)
