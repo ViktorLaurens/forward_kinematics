@@ -29,14 +29,14 @@ With the intermediate Denavit Hartenberg (DH) reference frames added, we get the
   <img src="res/kinematic_chain_with_frames.png" alt="Kinematic Chain Example" width="400">
 </p>
 
-From this we determine the DH parameters: 
+From this, we determine the DH parameters:
 
-| Link | a    | d   | alpha         | theta         |
-|------|------|-----|---------------|---------------|
-| 1    | 0    | 0.4 | `np.pi/2`     | `np.pi/2`     |
-| 2    | 0.4  | 0   | `-np.pi/2`    | 0             |
-| 3    | 0    | 0   | `-np.pi/2`    | `-np.pi/2`    |
-| 4    | 0    | 0   | `np.pi/2`     | 0             |
+| Link | \(a\)   | \(d\)     | \(\alpha\)      | \(\theta\)              |
+|------|---------|-----------|-----------------|-------------------------|
+| 1    | 0       | 0.4       | \(\pi/2\)       | \(\theta_1 + \pi/2\)    |
+| 2    | 0.4     | 0         | \(-\pi/2\)      | \(\theta_2\)            |
+| 3    | 0       | 0         | \(-\pi/2\)      | \(\theta_3 - \pi/2\)    |
+| 4    | 0       | \(\theta_4\) | \(\pi/2\)    | 0                       |
 
 The homogeneous transform between two reference frames is given by: 
 
