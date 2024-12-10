@@ -23,11 +23,26 @@ The kinematic chain used in this project is illustrated below:
   <img src="res/kinematic_chain.png" alt="Kinematic Chain Example" width="400">
 </p>
 
-With the intermediate Denavit Hartenberg reference frames added, we get the following sketch:
+With the intermediate Denavit Hartenberg (DH) reference frames added, we get the following sketch:
 
 <p align="center">
   <img src="res/kinematic_chain_with_frames.png" alt="Kinematic Chain Example" width="400">
 </p>
+
+From this we determine the DH parameters: 
+
+| Link | a    | d   | alpha         | theta         |
+|------|------|-----|---------------|---------------|
+| 1    | 0    | 0.4 | `np.pi/2`     | `np.pi/2`     |
+| 2    | 0.4  | 0   | `-np.pi/2`    | 0             |
+| 3    | 0    | 0   | `-np.pi/2`    | `-np.pi/2`    |
+| 4    | 0    | 0   | `np.pi/2`     | 0             |
+
+The homogeneous transform between two reference frames is given by: 
+
+The complete homogeneous transformation between the base of the robot and the robot TCP is then given by: 
+
+*Note:* Here we used the classical Denavit Hartenberg convention, one could also use the modified DH convention. 
 
 ## Documentation
 Detailed documentation is available at: [Documentation](https://linktodocumentation).
