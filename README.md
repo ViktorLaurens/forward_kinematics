@@ -1,2 +1,61 @@
 # forward_kinematics
-This repository aims to give an overview of how to perform Forwards Kinematics (FK) using an example.
+## Table of Contents
+1. [About the Project](#about-the-project)
+2. [Documentation](#documentation)
+3. [Project Structure](#project-structure)
+4. [Installation](#installation)
+   - [Prerequisites](#prerequisites)
+   - [Setup Instructions](#setup-instructions)
+5. [Run the Project Locally](#run-the-project-locally)
+6. [Usage and Examples](#usage-and-examples)
+7. [Running Tests](#running-tests)
+8. [License](#license)
+9. [Acknowledgements](#acknowledgements)
+10. [Authors and Contact](#authors-and-contact)
+11. [Badges](#badges)
+
+## About the Project
+This repository demonstrates how to perform Forward Kinematics (FK) using a specific kinematic chain example.
+
+The example kinematic chain is illustrated below:
+
+![Kinematic Chain Example](res/kinematic_chain.png)
+
+## Documentation
+Detailed documentation is available at: [Documentation](https://linktodocumentation).
+
+## Project Structure
+The project is organized as follows:
+
+## Installation
+### Prerequisites
+### Setup Instructions
+
+## Run the Project Locally
+
+## Usage and examples
+
+## Running Tests
+To run the tests in the `tests/` folder, run the following command:
+
+```bash
+pytest
+```
+
+## License
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE` for more information.
+
+## Acknowledgements
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+## Authors and Contact
+- [@ViktorLaurens](https://github.com/ViktorLaurens/)
+
+## Badges
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
