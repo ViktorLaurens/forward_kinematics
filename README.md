@@ -31,12 +31,13 @@ With the intermediate Denavit Hartenberg (DH) reference frames added, we get the
 
 From this, we determine the DH parameters:
 
-| Link | \(a\)   | \(d\)     | \(\alpha\)      | \(\theta\)              |
-|------|---------|-----------|-----------------|-------------------------|
-| 1    | 0       | 0.4       | \(\pi/2\)       | \(\theta_1 + \pi/2\)    |
-| 2    | 0.4     | 0         | \(-\pi/2\)      | \(\theta_2\)            |
-| 3    | 0       | 0         | \(-\pi/2\)      | \(\theta_3 - \pi/2\)    |
-| 4    | 0       | \(\theta_4\) | \(\pi/2\)    | 0                       |
+| Link | a (m)   | d (m)   | alpha (rad)   | theta (rad)         |
+|------|---------|---------|---------------|---------------------|
+| 1    | 0       | 0.4     | π/2           | θ₁ + π/2            |
+| 2    | 0.4     | 0       | -π/2          | θ₂                  |
+| 3    | 0       | 0       | -π/2          | θ₃ - π/2            |
+| 4    | 0       | θ₄      | π/2           | 0                   |
+
 
 The homogeneous transform between two reference frames is given by: 
 
