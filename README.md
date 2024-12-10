@@ -60,7 +60,7 @@ T_{base}^{TCP} = T_{0}^{1} \cdot T_{1}^{2} \cdot T_{2}^{3} \cdot T_{3}^{4}
 *Note:* Here we used the classical Denavit Hartenberg convention, one could also use the modified DH convention. 
 
 ## Documentation
-Detailed documentation is available at: [Documentation](https://linktodocumentation).
+Documentation can be downloaded from the  [`docs/`](docs/) folder. 
 
 ## Project Structure
 The project is organized as follows:
