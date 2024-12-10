@@ -149,6 +149,12 @@ To run the tests in the `tests/` folder, run the following command:
 pytest
 ```
 
+Running pytest in the terminal should output the following: 
+
+<p align="center">
+  <img src="res/pytest_output.png" alt="pytest output" width="600">
+</p>
+
 ## License
 Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE` for more information.
 
