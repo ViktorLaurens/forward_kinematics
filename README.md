@@ -145,7 +145,7 @@ When you run the command above in the terminal, you will be greeted with the fol
  
 ![Screenshot](res/screenshot_usage_1.png)
 
-The menu shows you the options you have. When wanting to calculate the homogeneous transform between base and end effector (TCP), enter 1 and afterwards enter the numerical values for each joint angle: 
+The menu shows you the options you have. When wanting to calculate the homogeneous transform between base and end effector (more specifically the Tool Center Point (TCP)), enter 1 and afterwards enter the numerical values for each joint angle: 
 
 ![Screenshot](res/screenshot_usage_2.png)
 
