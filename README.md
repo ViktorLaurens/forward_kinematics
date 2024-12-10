@@ -23,6 +23,11 @@ The kinematic chain used in this project is illustrated below:
   <img src="res/kinematic_chain.png" alt="Kinematic Chain Example" width="400">
 </p>
 
+With the intermediate Denavit Hartenberg reference frames added, we get the following sketch:
+
+<p align="center">
+  <img src="res/kinematic_chain_with_frames.png" alt="Kinematic Chain Example" width="400">
+</p>
 
 ## Documentation
 Detailed documentation is available at: [Documentation](https://linktodocumentation).
