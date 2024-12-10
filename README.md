@@ -41,6 +41,15 @@ From this, we determine the DH parameters:
 
 The homogeneous transform between two reference frames is given by: 
 
+```math
+T_{i}^{i+1} = 
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta)\cos(\alpha) & \sin(\theta)\sin(\alpha) & a\cos(\theta) \\
+\sin(\theta) & \cos(\theta)\cos(\alpha) & -\cos(\theta)\sin(\alpha) & a\sin(\theta) \\
+0 & \sin(\alpha) & \cos(\alpha) & d \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+
 The complete homogeneous transformation between the base of the robot and the robot TCP is then given by: 
 
 *Note:* Here we used the classical Denavit Hartenberg convention, one could also use the modified DH convention. 
