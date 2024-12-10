@@ -51,7 +51,11 @@ T_{i}^{i+1} =
 \end{bmatrix}
 ```
 
-The complete homogeneous transformation between the base of the robot and the robot TCP is then given by: 
+The complete homogeneous transformation between the base of the robot and the robot TCP is then given by:
+
+```math
+T_{base}^{TCP} = T_{0}^{1} \cdot T_{1}^{2} \cdot T_{2}^{3} \cdot T_{3}^{4}
+```
 
 *Note:* Here we used the classical Denavit Hartenberg convention, one could also use the modified DH convention. 
 
